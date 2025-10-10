@@ -18,20 +18,23 @@ export function AboutContent() {
               <div>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
                   <strong>
-                    Are you looking for a luxurious place to stay right in the heart of Blackpool with Free Parking?
+                   Looking for a comfortable place to stay in the heart of Blackpool with free parking?
+                    The Redstone offers a relaxed and friendly atmosphere, just a short walk from the beach
+                    and many of Blackpool’s favourite attractions.
                   </strong>{" "}
-                  The Redstone is perfectly positioned a stone's throw from the beach and all the major attractions
-                  Britain's favourite seaside resort has to offer.
+                  Our guest house has been thoughtfully updated to provide modern comfort while keeping its
+                  original charm. It’s an ideal spot for families, couples, and anyone wanting a pleasant
+                  base to enjoy everything the area has to offer.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  Our guest house has been fully refurbished to offer luxury accommodation, effortlessly combining
-                  traditional features with contemporary twists. The Redstone is perfect for the discerning guest
-                  looking for a relaxing base from which to explore Blackpool.
+                  When you book directly with us, you’ll get our best prices, along with free parking and Wi-Fi.
+                  We’ll make sure you’re given the best available room in your chosen type, and we’re always happy
+                  to help with any special requests. Children are welcome, and we look forward to making your stay enjoyable.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  Booking direct with us we guarantee <strong>Best Prices, Free Parking and Wi-Fi</strong>. We will
-                  select the best available room in your chosen room type, and if you have any special requests we will
-                  do our best to meet them. <strong>Children are welcome.</strong>
+                 At The Redstone, we take pride in offering those little touches that make a big difference from a warm welcome
+                  on arrival to a peaceful night’s rest and a freshly prepared breakfast each morning. Whether you’re visiting for
+                  a family holiday, a romantic weekend, or a short break by the sea, we aim to make you feel right at home.</strong>
                 </p>
               </div>
               <div className="relative">
