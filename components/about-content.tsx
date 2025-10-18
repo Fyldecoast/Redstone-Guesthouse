@@ -1,12 +1,8 @@
 "use client";
-"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Award, MapPin, Users } from "lucide-react";
-
-
-import { Button } from "@/components/ui/button"
-import { Award, MapPin, Users } from "lucide-react"
 
 export function AboutContent() {
   return (
@@ -25,23 +21,30 @@ export function AboutContent() {
               <div>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
                   <strong>
-                    Looking for a comfortable place to stay in the heart of Blackpool with free parking?
-                    The Redstone offers a relaxed and friendly atmosphere, just a short walk from the beach
+                    Looking for a comfortable place to stay in the heart of
+                    Blackpool with free parking? The Redstone offers a relaxed
+                    and friendly atmosphere, just a short walk from the beach
                     and many of Blackpool’s favourite attractions.
                   </strong>{" "}
-                  Our guest house has been thoughtfully updated to provide modern comfort while keeping its
-                  original charm. It’s an ideal spot for families, couples, and anyone wanting a pleasant
-                  base to enjoy everything the area has to offer.
+                  Our guest house has been thoughtfully updated to provide modern
+                  comfort while keeping its original charm. It’s an ideal spot
+                  for families, couples, and anyone wanting a pleasant base to
+                  enjoy everything the area has to offer.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  When you book directly with us, you’ll get our best prices, along with free parking and Wi-Fi.
-                  We’ll make sure you’re given the best available room in your chosen type, and we’re always happy
-                  to help with any special requests. Children are welcome, and we look forward to making your stay enjoyable.
+                  When you book directly with us, you’ll get our best prices,
+                  along with free parking and Wi-Fi. We’ll make sure you’re given
+                  the best available room in your chosen type, and we’re always
+                  happy to help with any special requests. Children are welcome,
+                  and we look forward to making your stay enjoyable.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  At The Redstone, we take pride in offering those little touches that make a big difference — from a warm welcome
-                  on arrival to a peaceful night’s rest and a freshly prepared breakfast each morning. Whether you’re visiting for
-                  a family holiday, a romantic weekend, or a short break by the sea, we aim to make you feel right at home.
+                  At The Redstone, we take pride in offering those little touches
+                  that make a big difference — from a warm welcome on arrival to
+                  a peaceful night’s rest and a freshly prepared breakfast each
+                  morning. Whether you’re visiting for a family holiday, a
+                  romantic weekend, or a short break by the sea, we aim to make
+                  you feel right at home.
                 </p>
               </div>
               <div className="relative">
@@ -63,14 +66,17 @@ export function AboutContent() {
                 Perfect Location
               </h3>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Blackpool has so much on offer; whether you're simply looking to relax and unwind or seeking a
-                fun-packed holiday! The sandy beach is close by, where you can take in some sea air and soak up some
+                Blackpool has so much on offer; whether you're simply looking to
+                relax and unwind or seeking a fun-packed holiday! The sandy beach
+                is close by, where you can take in some sea air and soak up some
                 rays in the summer months.
               </p>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                For thrill seekers, visit <strong>Blackpool Pleasure Beach</strong> for roller coasters. The
-                world-famous <strong>Blackpool Tower</strong> is within easy reach, as are the{" "}
-                <strong>Winter Gardens</strong> and the main shopping area of the town.
+                For thrill seekers, visit{" "}
+                <strong>Blackpool Pleasure Beach</strong> for roller coasters.
+                The world-famous <strong>Blackpool Tower</strong> is within easy
+                reach, as are the <strong>Winter Gardens</strong> and the main
+                shopping area of the town.
               </p>
             </div>
 
@@ -81,10 +87,14 @@ export function AboutContent() {
                 Business Guests
               </h3>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                A freshly cooked breakfast can be arranged at a time to suit you. We provide all the amenities business
-                travellers need for a productive and comfortable stay.
+                A freshly cooked breakfast can be arranged at a time to suit you.
+                We provide all the amenities business travellers need for a
+                productive and comfortable stay.
               </p>
-              <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button
+                asChild
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
                 <a
                   href="https://www.theredstoneblackpool.co.uk/en-GB/rooms"
                   target="_blank"
@@ -98,5 +108,5 @@ export function AboutContent() {
         </div>
       </div>
     </section>
-  )
+  );
 }
