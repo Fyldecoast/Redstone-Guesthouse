@@ -1,3 +1,10 @@
+"use client";
+"use client";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Award, MapPin, Users } from "lucide-react";
+
+
 import { Button } from "@/components/ui/button"
 import { Award, MapPin, Users } from "lucide-react"
 
@@ -18,7 +25,7 @@ export function AboutContent() {
               <div>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
                   <strong>
-                   Looking for a comfortable place to stay in the heart of Blackpool with free parking?
+                    Looking for a comfortable place to stay in the heart of Blackpool with free parking?
                     The Redstone offers a relaxed and friendly atmosphere, just a short walk from the beach
                     and many of Blackpool’s favourite attractions.
                   </strong>{" "}
@@ -32,9 +39,9 @@ export function AboutContent() {
                   to help with any special requests. Children are welcome, and we look forward to making your stay enjoyable.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                 At The Redstone, we take pride in offering those little touches that make a big difference from a warm welcome
+                  At The Redstone, we take pride in offering those little touches that make a big difference — from a warm welcome
                   on arrival to a peaceful night’s rest and a freshly prepared breakfast each morning. Whether you’re visiting for
-                  a family holiday, a romantic weekend, or a short break by the sea, we aim to make you feel right at home.</strong>
+                  a family holiday, a romantic weekend, or a short break by the sea, we aim to make you feel right at home.
                 </p>
               </div>
               <div className="relative">
@@ -74,11 +81,15 @@ export function AboutContent() {
                 Business Guests
               </h3>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                A freshly cooked Breakfast can be arranged at a time to suit you. We provide all the amenities business
-                travelers need for a productive and comfortable stay.
+                A freshly cooked breakfast can be arranged at a time to suit you. We provide all the amenities business
+                travellers need for a productive and comfortable stay.
               </p>
               <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="https://www.theredstoneblackpool.co.uk/en-GB/rooms" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.theredstoneblackpool.co.uk/en-GB/rooms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Book Business Stay
                 </a>
               </Button>
