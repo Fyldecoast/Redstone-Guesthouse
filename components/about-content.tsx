@@ -24,25 +24,25 @@ export function AboutContent() {
                     Looking for a comfortable place to stay in the heart of
                     Blackpool with free parking? The Redstone offers a relaxed
                     and friendly atmosphere, just a short walk from the beach
-                    and many of Blackpool’s favourite attractions.
+                    and many of Blackpool&rsquo;s favourite attractions.
                   </strong>{" "}
                   Our guest house has been thoughtfully updated to provide modern
-                  comfort while keeping its original charm. It’s an ideal spot
+                  comfort while keeping its original charm. It&rsquo;s an ideal spot
                   for families, couples, and anyone wanting a pleasant base to
                   enjoy everything the area has to offer.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  When you book directly with us, you’ll get our best prices,
-                  along with free parking and Wi-Fi. We’ll make sure you’re given
-                  the best available room in your chosen type, and we’re always
+                  When you book directly with us, you&rsquo;ll get our best prices,
+                  along with free parking and Wi-Fi. We&rsquo;ll make sure you&rsquo;re given
+                  the best available room in your chosen type, and we&rsquo;re always
                   happy to help with any special requests. Children are welcome,
                   and we look forward to making your stay enjoyable.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed mb-6">
                   At The Redstone, we take pride in offering those little touches
                   that make a big difference — from a warm welcome on arrival to
-                  a peaceful night’s rest and a freshly prepared breakfast each
-                  morning. Whether you’re visiting for a family holiday, a
+                  a peaceful night&rsquo;s rest and a freshly prepared breakfast each
+                  morning. Whether you&rsquo;re visiting for a family holiday, a
                   romantic weekend, or a short break by the sea, we aim to make
                   you feel right at home.
                 </p>
@@ -66,7 +66,7 @@ export function AboutContent() {
                 Perfect Location
               </h3>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Blackpool has so much on offer; whether you're simply looking to
+                Blackpool has so much on offer; whether you&rsquo;re simply looking to
                 relax and unwind or seeking a fun-packed holiday! The sandy beach
                 is close by, where you can take in some sea air and soak up some
                 rays in the summer months.
@@ -96,7 +96,7 @@ export function AboutContent() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <a
-                  href="https://www.theredstoneblackpool.co.uk/en-GB/rooms"
+                  href="https://booking-directly.com/widgets/Z6eD6SoPu7GpU8mBBkUvmgXj1zB5lxbm6PX8ymNw522QV2lFnqRrJhW7HBTpL/properties/unit-selection?search_stay_dates=%7B%2522checkInDate%2522:%25222026-06-24%2522,%2522checkOutDate%2522:%25222026-06-25%2522%7D&search_occupancies=%5B%7B%2522numberOfAdults%2522:2,%2522children%2522:%5B%5D%7D%5D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
