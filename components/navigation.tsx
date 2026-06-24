@@ -26,7 +26,10 @@ export function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/rooms", label: "Rooms & Suites" },
+    // Changed Rooms & Suites to use external booking link
+    { href: "https://booking-directly.com/widgets/Z6eD6SoPu7GpU8mBBkUvmgXj1zB5lxbm6PX8ymNw522QV2lFnqRrJhW7HBTpL/properties/unit-selection?search_stay_dates=%7B%2522checkInDate%2522:%25222026-06-24%2522,%2522checkOutDate%2522:%25222026-06-25%2522%7D&search_occupancies=%5B%7B%2522numberOfAdults%2522:2,%2522children%2522:%5B%5D%7D%5D", 
+      label: "Rooms & Suites", 
+      external: true },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact Us" },
   ]
@@ -48,22 +51,40 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group ${
-                  pathname === item.href ? "text-primary" : ""
-                }`}
-              >
-                {item.label}
-                <span
-                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-all duration-300 ${
-                    pathname === item.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+            {navItems.map((item) => {
+              // If it's an external link, use <a> tag
+              if (item.external) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group"
+                  >
+                    {item.label}
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-all duration-300 scale-0 group-hover:scale-x-100" />
+                  </a>
+                )
+              }
+              // Internal links use Next.js Link
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group ${
+                    pathname === item.href ? "text-primary" : ""
                   }`}
-                />
-              </Link>
-            ))}
+                >
+                  {item.label}
+                  <span
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-all duration-300 ${
+                      pathname === item.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                    }`}
+                  />
+                </Link>
+              )
+            })}
           </div>
 
           {/* Book Now Button */}
@@ -107,19 +128,40 @@ export function Navigation() {
         >
           <div className="bg-background/95 backdrop-blur-md border-t border-border/50">
             <div className="px-4 py-6 space-y-2">
-              {navItems.map((item, index) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`block text-foreground hover:text-primary hover:bg-muted/50 transition-all duration-300 font-medium py-3 px-4 rounded-lg transform ${
-                    isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0"
-                  } ${pathname === item.href ? "text-primary bg-muted/30" : ""}`}
-                  style={{ transitionDelay: `${index * 50}ms` }}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item, index) => {
+                // Mobile external link
+                if (item.external) {
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`block text-foreground hover:text-primary hover:bg-muted/50 transition-all duration-300 font-medium py-3 px-4 rounded-lg transform ${
+                        isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0"
+                      }`}
+                      style={{ transitionDelay: `${index * 50}ms` }}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  )
+                }
+                // Mobile internal link
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`block text-foreground hover:text-primary hover:bg-muted/50 transition-all duration-300 font-medium py-3 px-4 rounded-lg transform ${
+                      isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0"
+                    } ${pathname === item.href ? "text-primary bg-muted/30" : ""}`}
+                    style={{ transitionDelay: `${index * 50}ms` }}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              })}
               <div
                 className={`pt-4 transform transition-all duration-300 ${
                   isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0"
