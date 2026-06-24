@@ -1,0 +1,10 @@
+[33ma8a3d44[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Fix suspense boundary error
+[33mbe43a0a[m Update all booking buttons to use correct booking URL
+[33m85acb14[m Fix booking buttons and remove index.html
+[33m2ee05a8[m Force fresh deployment
+[33m65a7a8c[m Force fresh deployment
+[33m2c3d649[m Update CNAME
+[33m6ef2c62[m Create CNAME
+[33m938e22b[m Force rebuild after deleting index.html
+[33mea7c222[m Resolve merge conflicts and update booking URLs
+[33m9a96237[m Update all booking buttons to direct booking URL
