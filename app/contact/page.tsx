@@ -4,9 +4,9 @@ import { ContactHero } from "@/components/contact-hero"
 import { ContactSection } from "@/components/contact-section"
 
 export const metadata = {
-  title: "Contact Us - The Redstone Guest House | Get in Touch Blackpool Hotel",
+  title: "Contact Us - The Redstone Guest House | Blackpool",
   description:
-    "Contact The Redstone Guest House in Blackpool. Located at 9 Alexandra Road, FY1 6BU. Call 01253344004 or email redstoneblkp@gmail.com for bookings and enquiries.",
+    "Get in touch with The Redstone Guest House in Blackpool. Call, email, or visit us for bookings, enquiries, or special requests.",
 }
 
 export default function ContactPage() {

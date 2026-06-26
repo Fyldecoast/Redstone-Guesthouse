@@ -4,9 +4,9 @@ import { PrivacyHero } from "@/components/privacy-hero"
 import { PrivacyContent } from "@/components/privacy-content"
 
 export const metadata = {
-  title: "Privacy Policy - The Redstone Guest House | Data Protection Blackpool",
+  title: "Privacy Policy - The Redstone Guest House | Blackpool",
   description:
-    "Our privacy policy explains how The Redstone Guest House collects, uses, and protects your personal data in compliance with GDPR.",
+    "Read our privacy policy to understand how The Redstone Guest House protects and uses your personal information.",
 }
 
 export default function PrivacyPage() {

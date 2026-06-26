@@ -4,9 +4,9 @@ import { GalleryHero } from "@/components/gallery-hero"
 import { PhotoGallery } from "@/components/photo-gallery"
 
 export const metadata = {
-  title: "Gallery - The Redstone Guest House | Luxury Hotel Photos Blackpool",
+  title: "Gallery - The Redstone Guest House | Luxury Accommodation Blackpool",
   description:
-    "Explore our photo gallery showcasing the luxury rooms, elegant lounge areas, and beautiful surroundings of The Redstone Guest House in Blackpool.",
+    "Explore our photo gallery of The Redstone Guest House in Blackpool. View our luxury rooms, elegant lounge, and beautiful surroundings.",
 }
 
 export default function GalleryPage() {

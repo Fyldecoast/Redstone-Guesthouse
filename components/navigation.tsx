@@ -6,8 +6,6 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
-const BOOKING_URL = "https://booking-directly.com/widgets/Z6eD6SoPu7GpU8mBBkUvmgXj1zB5lxbm6PX8ymNw522QV2lFnqRrJhW7HBTpL/properties/unit-selection?search_stay_dates=%7B%2522checkInDate%2522:%25222026-06-24%2522,%2522checkOutDate%2522:%25222026-06-25%2522%7D&search_occupancies=%5B%7B%2522numberOfAdults%2522:2,%2522children%2522:%5B%5D%7D%5D"
-
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -28,7 +26,7 @@ export function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: BOOKING_URL, label: "Rooms & Suites", external: true },
+    { href: "https://www.theredstoneblackpool.co.uk/en-GB/rooms", label: "Rooms & Suites", external: true },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact Us" },
   ]
@@ -90,7 +88,7 @@ export function Navigation() {
               asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105 active:scale-95"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <a href="https://www.theredstoneblackpool.co.uk/en-GB/rooms" target="_blank" rel="noopener noreferrer">
                 Book Now
               </a>
             </Button>
@@ -167,7 +165,11 @@ export function Navigation() {
                   asChild
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:shadow-lg active:scale-95"
                 >
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.theredstoneblackpool.co.uk/en-GB/rooms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Book Now
                   </a>
                 </Button>
