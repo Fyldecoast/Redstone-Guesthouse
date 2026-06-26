@@ -26,8 +26,8 @@ export function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "https://www.theredstoneblackpool.co.uk/en-GB/rooms", label: "Rooms & Suites", external: true },
-    { href: "/gallery", label: "Gallery" },
+    { href: "/rooms.html", label: "Rooms & Suites", external: false },
+    { href: "/gallery", label: "Gallery" }, 
     { href: "/contact", label: "Contact Us" },
   ]
 
